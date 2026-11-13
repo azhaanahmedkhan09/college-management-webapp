@@ -29,7 +29,7 @@ export const MOCK_USERS: User[] = [
     email: 'prashantini.maam@college.edu',
     avatar: 'https://images.unsplash.com/photo-1544005313-94ddf0286df2?w=150&h=150&fit=crop&crop=faces',
     birthday: '09-12',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'prashantini',
     password: 'password123'
   },
@@ -40,7 +40,7 @@ export const MOCK_USERS: User[] = [
     email: 'roshan@college.edu',
     avatar: 'https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?w=150&h=150&fit=crop&crop=faces',
     birthday: '11-04',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'roshan',
     password: 'password123'
   },
@@ -51,7 +51,7 @@ export const MOCK_USERS: User[] = [
     email: 'johan@college.edu',
     avatar: 'https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=150&h=150&fit=crop&crop=faces',
     birthday: '01-22',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'johan',
     password: 'password123'
   },
@@ -86,7 +86,7 @@ export const MOCK_USERS: User[] = [
     avatar: 'https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?w=150&h=150&fit=crop&crop=faces',
     birthday: '06-27', // Birthday matches today!
     studentId: 'std-1',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'liam.johnson',
     password: 'password123'
   },
@@ -98,7 +98,7 @@ export const MOCK_USERS: User[] = [
     avatar: 'https://images.unsplash.com/photo-1500648767791-00dcc994a43e?w=150&h=150&fit=crop&crop=faces',
     birthday: '12-05',
     studentId: 'std-2',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'marcus.miller',
     password: 'password123'
   },
@@ -110,7 +110,7 @@ export const MOCK_USERS: User[] = [
     avatar: 'https://images.unsplash.com/photo-1494790108377-be9c29b29330?w=150&h=150&fit=crop&crop=faces',
     birthday: '03-14',
     studentId: 'std-3',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'sophia.patel',
     password: 'password123'
   },
@@ -122,7 +122,7 @@ export const MOCK_USERS: User[] = [
     avatar: 'https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?w=150&h=150&fit=crop&crop=faces',
     birthday: '10-31',
     studentId: 'std-4',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'ethan.hunt',
     password: 'password123'
   },
@@ -134,7 +134,7 @@ export const MOCK_USERS: User[] = [
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?w=150&h=150&fit=crop&crop=faces',
     birthday: '07-19',
     studentId: 'std-5',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'ava.martinez',
     password: 'password123'
   },
@@ -146,7 +146,7 @@ export const MOCK_USERS: User[] = [
     avatar: 'https://images.unsplash.com/photo-1517841905240-472988babdf9?w=150&h=150&fit=crop&crop=faces',
     birthday: '02-28',
     studentId: 'std-6',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'chloe.watson',
     password: 'password123'
   },
@@ -158,7 +158,7 @@ export const MOCK_USERS: User[] = [
     avatar: 'https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?w=150&h=150&fit=crop&crop=faces',
     birthday: '05-11',
     studentId: 'std-7',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     username: 'devon.patel',
     password: 'password123'
   },
@@ -202,8 +202,8 @@ export const MOCK_STUDENTS: Student[] = [
   {
     id: 'std-1',
     name: 'Liam Johnson',
-    rollNo: 'BCA-2023-042',
-    department: 'Bachelor of Computer Application (BCA)',
+    rollNo: 'GMU-BT-2023-042',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 3,
     semester: 5,
     email: 'liam.j@student.edu',
@@ -234,8 +234,8 @@ export const MOCK_STUDENTS: Student[] = [
   {
     id: 'std-2',
     name: 'Marcus Miller',
-    rollNo: 'BCA-2023-081',
-    department: 'Bachelor of Computer Application (BCA)',
+    rollNo: 'GMU-BT-2023-081',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 3,
     semester: 5,
     email: 'marcus.m@student.edu',
@@ -266,8 +266,8 @@ export const MOCK_STUDENTS: Student[] = [
   {
     id: 'std-3',
     name: 'Sophia Patel',
-    rollNo: 'BCA-2024-015',
-    department: 'Bachelor of Computer Application (BCA)',
+    rollNo: 'GMU-BT-2024-015',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 2,
     semester: 3,
     email: 'sophia.p@student.edu',
@@ -298,8 +298,8 @@ export const MOCK_STUDENTS: Student[] = [
   {
     id: 'std-4',
     name: 'Ethan Hunt',
-    rollNo: 'BCA-2023-004',
-    department: 'Bachelor of Computer Application (BCA)',
+    rollNo: 'GMU-BT-2023-004',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 3,
     semester: 6,
     email: 'ethan.h@student.edu',
@@ -330,8 +330,8 @@ export const MOCK_STUDENTS: Student[] = [
   {
     id: 'std-5',
     name: 'Ava Martinez',
-    rollNo: 'BCA-2023-011',
-    department: 'Bachelor of Computer Application (BCA)',
+    rollNo: 'GMU-BT-2023-011',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 3,
     semester: 5,
     email: 'ava.m@student.edu',
@@ -362,8 +362,8 @@ export const MOCK_STUDENTS: Student[] = [
   {
     id: 'std-6',
     name: 'Chloe Watson',
-    rollNo: 'BCA-2025-001',
-    department: 'Bachelor of Computer Application (BCA)',
+    rollNo: 'GMU-BT-2025-001',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 1,
     semester: 1,
     email: 'chloe.w@student.edu',
@@ -394,8 +394,8 @@ export const MOCK_STUDENTS: Student[] = [
   {
     id: 'std-7',
     name: 'Devon Patel',
-    rollNo: 'BCA-2024-019',
-    department: 'Bachelor of Computer Application (BCA)',
+    rollNo: 'GMU-BT-2024-019',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 2,
     semester: 3,
     email: 'devon.p@student.edu',
@@ -430,7 +430,7 @@ export const MOCK_STAFF: Staff[] = [
     id: 'usr-staff-1',
     name: 'Prashantini Ma\'am',
     email: 'prashantini.maam@college.edu',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     hoursTaughtWeekly: 18,
     subjects: ['C Programming', 'DSA', 'Data Science']
   },
@@ -438,7 +438,7 @@ export const MOCK_STAFF: Staff[] = [
     id: 'usr-staff-2',
     name: 'Roshan',
     email: 'roshan@college.edu',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     hoursTaughtWeekly: 16,
     subjects: ['Internet Programming', 'Java', 'Cyber Security']
   },
@@ -446,14 +446,14 @@ export const MOCK_STAFF: Staff[] = [
     id: 'usr-staff-3',
     name: 'Jöhan',
     email: 'johan@college.edu',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     hoursTaughtWeekly: 14,
     subjects: ['Python', 'AI', 'Deep Learning']
   }
 ];
 
 export const INITIAL_TIMETABLE: TimetableSlot[] = [
-  // Semester 1 (BCA Year 1)
+  // Semester 1 (B.Tech Year 1)
   {
     id: 'tt-1',
     day: 'Monday',
@@ -462,7 +462,7 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
     classroom: 'Lab Room 101',
     professorId: 'usr-staff-1',
     professorName: 'Prashantini Ma\'am',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 1,
     semester: 1
   },
@@ -474,11 +474,11 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
     classroom: 'Lab Room 102',
     professorId: 'usr-staff-3',
     professorName: 'Jöhan',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 1,
     semester: 1
   },
-  // Semester 3 (BCA Year 2)
+  // Semester 3 (B.Tech Year 2)
   {
     id: 'tt-3',
     day: 'Tuesday',
@@ -487,7 +487,7 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
     classroom: 'Lab Room 201',
     professorId: 'usr-staff-1',
     professorName: 'Prashantini Ma\'am',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 2,
     semester: 3
   },
@@ -499,11 +499,11 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
     classroom: 'Seminar Hall A',
     professorId: 'usr-staff-2',
     professorName: 'Roshan',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 2,
     semester: 3
   },
-  // Semester 5 (BCA Year 3)
+  // Semester 5 (B.Tech Year 3)
   {
     id: 'tt-5',
     day: 'Monday',
@@ -512,7 +512,7 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
     classroom: 'Advanced Computing Lab',
     professorId: 'usr-staff-1',
     professorName: 'Prashantini Ma\'am',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 3,
     semester: 5
   },
@@ -524,7 +524,7 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
     classroom: 'AI Lab Room 303',
     professorId: 'usr-staff-3',
     professorName: 'Jöhan',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 3,
     semester: 5
   },
@@ -536,11 +536,11 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
     classroom: 'AV Room 2',
     professorId: 'usr-staff-2',
     professorName: 'Roshan',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 3,
     semester: 5
   },
-  // Semester 6 (BCA Year 3)
+  // Semester 6 (B.Tech Year 3)
   {
     id: 'tt-8',
     day: 'Tuesday',
@@ -549,7 +549,7 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
     classroom: 'Neural Network Center',
     professorId: 'usr-staff-3',
     professorName: 'Jöhan',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 3,
     semester: 6
   },
@@ -561,7 +561,7 @@ export const INITIAL_TIMETABLE: TimetableSlot[] = [
     classroom: 'Lab Room 204',
     professorId: 'usr-staff-2',
     professorName: 'Roshan',
-    department: 'Bachelor of Computer Application (BCA)',
+    department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
     year: 3,
     semester: 6
   }
@@ -726,40 +726,36 @@ export const INITIAL_GRIEVANCES: Grievance[] = [
 
 // Syllabus Progress Initial Database
 export const INITIAL_SYLLABUS_PROGRESS = [
-  { id: 'syl-1', course: 'C Programming', progress: 90, code: 'BCA-101' },
-  { id: 'syl-2', course: 'DSA', progress: 75, code: 'BCA-301' },
-  { id: 'syl-3', course: 'Data Science', progress: 60, code: 'BCA-501' },
-  { id: 'syl-4', course: 'Cyber Security', progress: 85, code: 'BCA-503' },
-  { id: 'syl-5', course: 'AI', progress: 50, code: 'BCA-502' }
+  { id: 'syl-1', course: 'C Programming', progress: 90, code: 'BTECH-101' },
+  { id: 'syl-2', course: 'DSA', progress: 75, code: 'BTECH-301' },
+  { id: 'syl-3', course: 'Data Science', progress: 60, code: 'BTECH-501' },
+  { id: 'syl-4', course: 'Cyber Security', progress: 85, code: 'BTECH-503' },
+  { id: 'syl-5', course: 'AI', progress: 50, code: 'BTECH-502' }
 ];
 
 // Enrich MOCK_STUDENTS with real-time subject attendance history
 MOCK_STUDENTS.forEach(student => {
-  // Let's have a core list of 10 general historic dates
   const dates = ["06-15", "06-16", "06-17", "06-18", "06-19", "06-22", "06-23", "06-24", "06-25", "06-26"];
   let subjects: { name: string; prof: string }[] = [];
 
-  if (student.department === 'Bachelor of Computer Application (BCA)') {
+  if (student.department === 'Bachelor of Technology (B.Tech - Computer Science & Engineering)') {
     if (student.year === 1) {
-      // Semester 1
       subjects = [
         { name: 'C Programming', prof: 'Prashantini Ma\'am' },
         { name: 'Python', prof: 'Jöhan' }
       ];
     } else if (student.year === 2) {
-      // Semester 3
       subjects = [
         { name: 'DSA', prof: 'Prashantini Ma\'am' },
         { name: 'Internet Programming', prof: 'Roshan' }
       ];
     } else {
-      // Year 3 (Could be Semester 5 or 6)
-      if (student.id === 'std-4') { // Ethan Hunt is Semester 6
+      if (student.id === 'std-4') {
         subjects = [
           { name: 'Deep Learning', prof: 'Jöhan' },
           { name: 'Java', prof: 'Roshan' }
         ];
-      } else { // Liam, Marcus, Ava are Semester 5
+      } else {
         subjects = [
           { name: 'Data Science', prof: 'Prashantini Ma\'am' },
           { name: 'Cyber Security', prof: 'Roshan' },
@@ -768,7 +764,6 @@ MOCK_STUDENTS.forEach(student => {
       }
     }
   } else {
-    // Fallback for other courses
     subjects = [
       { name: 'C Programming', prof: 'Prashantini Ma\'am' },
       { name: 'Cyber Security', prof: 'Roshan' },
@@ -779,15 +774,15 @@ MOCK_STUDENTS.forEach(student => {
   student.subjectAttendance = subjects.map(sub => {
     const sessions = dates.map((date, idx) => {
       let status: 'Present' | 'Absent' = 'Present';
-      if (student.id === 'std-2') { // Marcus: 71%
+      if (student.id === 'std-2') {
         if (idx === 2 || idx === 5 || idx === 8) status = 'Absent';
-      } else if (student.id === 'std-4') { // Ethan: 64%
+      } else if (student.id === 'std-4') {
         if (idx === 1 || idx === 3 || idx === 6 || idx === 8) status = 'Absent';
-      } else if (student.id === 'std-5') { // Ava: 82%
+      } else if (student.id === 'std-5') {
         if (idx === 4 || idx === 7) status = 'Absent';
-      } else if (student.id === 'std-7') { // Devon: 78%
+      } else if (student.id === 'std-7') {
         if (idx === 0 || idx === 6) status = 'Absent';
-      } else if (student.id === 'std-1') { // Liam: 88%
+      } else if (student.id === 'std-1') {
         if (idx === 3) status = 'Absent';
       } else {
         if (idx === 4 && student.id === 'std-6') status = 'Absent';
@@ -807,4 +802,3 @@ MOCK_STUDENTS.forEach(student => {
     };
   });
 });
-

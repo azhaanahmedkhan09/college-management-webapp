@@ -29,10 +29,17 @@ import StaffPanel from './components/StaffPanel';
 import StudentPanel from './components/StudentPanel';
 import ParentPanel from './components/ParentPanel';
 import LoginScreen from './components/LoginScreen';
+import { AndroidAppLauncher, OfflineStatusToast } from './components/AndroidAppModal';
 
 export default function App() {
-  // Authentication & Session state
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
+  // Authentication & Session state (supports ?autostart=1 for test verification)
+  const [isLoggedIn, setIsLoggedIn] = useState(() => {
+    if (typeof window !== 'undefined') {
+      const params = new URLSearchParams(window.location.search);
+      return params.get('autostart') === '1';
+    }
+    return false;
+  });
 
   // Theme state
   const [darkMode, setDarkMode] = useState(false);
@@ -221,10 +228,10 @@ export default function App() {
             </div>
             <div>
               <h1 className="font-serif font-bold text-lg tracking-tight text-slate-900 dark:text-white leading-tight flex items-center gap-1.5">
-                Athenæum <span className="bg-gradient-to-r from-fuchsia-600 via-violet-600 via-cyan-500 to-amber-500 bg-clip-text text-transparent font-extrabold">Portal</span>
+                Campus <span className="bg-gradient-to-r from-fuchsia-600 via-violet-600 via-cyan-500 to-amber-500 bg-clip-text text-transparent font-extrabold">Sphere</span>
               </h1>
               <span className="text-[10px] font-semibold text-slate-500 dark:text-slate-400 block tracking-wide">
-                Bapuji Institute of Hi-Tech Education
+                GM University • Engineering College
               </span>
             </div>
           </div>
@@ -280,6 +287,9 @@ export default function App() {
                 </select>
               </div>
             )}
+
+            {/* Android App & Offline Hub */}
+            <AndroidAppLauncher variant="navbar" />
 
             {/* Theme Toggle */}
             <button
@@ -405,18 +415,20 @@ export default function App() {
       <footer className="border-t border-slate-200/80 dark:border-slate-800/80 py-6 px-6 text-xs text-slate-500 dark:text-slate-400 font-mono mt-auto relative z-10 bg-white/40 dark:bg-slate-950/40 backdrop-blur-sm">
         <div className="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
           <div className="flex flex-wrap items-center gap-2">
-            <span className="font-bold text-slate-700 dark:text-slate-200">Bapuji Institute of Hi-Tech Education</span>
+            <span className="font-bold text-slate-700 dark:text-slate-200">GM University • GMU Engineering College</span>
             <span>•</span>
-            <span className="text-emerald-600 dark:text-emerald-400 font-medium">Athenæum Campus Network</span>
+            <span className="text-emerald-600 dark:text-emerald-400 font-medium">Campus Sphere Network</span>
             <span>•</span>
             <span className="px-2 py-0.5 rounded-md bg-emerald-500/10 text-emerald-600 dark:text-emerald-400 font-bold text-[10px]">SYSTEM ONLINE</span>
           </div>
-          <div>
+          <div className="flex items-center gap-3">
+            <AndroidAppLauncher variant="navbar" />
             <span>Davangere, Karnataka, India • System v4.5</span>
           </div>
         </div>
       </footer>
 
+      <OfflineStatusToast />
     </div>
   );
 }

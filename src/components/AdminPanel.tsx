@@ -64,7 +64,7 @@ export default function AdminPanel({
   // Add Professor Form States
   const [newProfName, setNewProfName] = useState('');
   const [newProfEmail, setNewProfEmail] = useState('');
-  const [newProfDepartment, setNewProfDepartment] = useState('Bachelor of Computer Application (BCA)');
+  const [newProfDepartment, setNewProfDepartment] = useState('Bachelor of Technology (B.Tech - Computer Science & Engineering)');
   const [newProfSubjects, setNewProfSubjects] = useState<string[]>([]);
   const [newProfCustomSubject, setNewProfCustomSubject] = useState('');
   const [newProfEnableInitialTimetable, setNewProfEnableInitialTimetable] = useState(false);
@@ -255,7 +255,7 @@ export default function AdminPanel({
 
       // Automatically determine class name & year
       const year = newProfTimetableSemester <= 2 ? 1 : newProfTimetableSemester <= 4 ? 2 : 3;
-      const computedClassName = `BCA Year ${year} (Sem ${newProfTimetableSemester})`;
+      const computedClassName = `B.Tech Year ${year} (Sem ${newProfTimetableSemester})`;
 
       // Pick the first subject from their list
       const scheduledSubject = subjects[0];
@@ -263,7 +263,7 @@ export default function AdminPanel({
       // Get matching student IDs to pre-fill slot
       const matchingStudents = students.filter(s => 
         s.year === year && 
-        s.department.toLowerCase() === 'bachelor of computer application (bca)'
+        (s.department.toLowerCase().includes('b.tech') || s.department.toLowerCase().includes('engineering'))
       );
       const studentIds = matchingStudents.map(s => s.id);
 
@@ -275,7 +275,7 @@ export default function AdminPanel({
         classroom: newProfTimetableClassroom,
         professorId: newStaffId,
         professorName: newProfName.trim(),
-        department: 'Bachelor of Computer Application (BCA)',
+        department: 'Bachelor of Technology (B.Tech - Computer Science & Engineering)',
         year: year,
         semester: newProfTimetableSemester,
         className: computedClassName,
@@ -585,10 +585,10 @@ export default function AdminPanel({
             <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs">
               <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 mb-3 flex items-center gap-2">
                 <School className="w-4 h-4 text-amber-500" />
-                BIHE Campus Interactive Navigator
+                GMU Campus Interactive Navigator
               </h3>
               <p className="text-xs text-slate-400 dark:text-slate-500 mb-4 leading-relaxed">
-                Supervise administrative registers, advanced laboratory terminals, and central halls at Bapuji Institute of Hi-Tech Education. Hover over sections of the interactive campus facade below.
+                Supervise administrative registers, advanced laboratory terminals, and central halls at GM University (GMU) Engineering College. Hover over sections of the interactive campus facade below.
               </p>
               <BiheCollegeBuilding />
             </div>
@@ -1333,7 +1333,7 @@ export default function AdminPanel({
                       className="w-full text-xs rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 p-2.5 focus:border-indigo-500"
                       id="select-new-prof-dept"
                     >
-                      <option value="Bachelor of Computer Application (BCA)">Bachelor of Computer Application (BCA)</option>
+                      <option value="Bachelor of Technology (B.Tech - Computer Science & Engineering)">Bachelor of Technology (B.Tech - Computer Science & Engineering)</option>
                       <option value="Department of Information Technology">Department of Information Technology</option>
                       <option value="Advanced Computer Science & AI">Advanced Computer Science & AI</option>
                     </select>

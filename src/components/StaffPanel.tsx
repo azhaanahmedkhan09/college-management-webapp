@@ -101,7 +101,7 @@ export default function StaffPanel({
         id: `syl-custom-${Date.now()}-${index}`,
         course: sub,
         progress: 0,
-        code: `BCA-CS${100 + Math.floor(Math.random() * 800)}`
+        code: `BTECH-CS${100 + Math.floor(Math.random() * 800)}`
       }));
       
       return [...prev, ...newSyllabusItems];
@@ -481,10 +481,10 @@ export default function StaffPanel({
             <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs">
               <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 mb-3 flex items-center gap-2">
                 <School className="w-4 h-4 text-amber-500" />
-                BIHE Campus Interactive Navigator
+                GMU Campus Interactive Navigator
               </h3>
               <p className="text-xs text-slate-400 dark:text-slate-500 mb-4 leading-relaxed">
-                Explore the academic departments, labs, and seminar halls across Bapuji Institute of Hi-Tech Education. Hover over a section of the campus facade to view details.
+                Explore the academic departments, labs, and seminar halls across GM University (GMU) Engineering College. Hover over a section of the campus facade to view details.
               </p>
               <BiheCollegeBuilding />
             </div>
@@ -706,7 +706,7 @@ export default function StaffPanel({
                 <div>
                   <h4 className="font-bold text-slate-800 dark:text-slate-100 flex items-center gap-2 text-base">
                     <Clock className="w-5 h-5 text-indigo-500" />
-                    BCA College Attendance Management Book
+                    B.Tech Engineering Attendance Management Book
                   </h4>
                   <p className="text-xs text-slate-400 mt-1">
                     Select a class semester and subject to edit attendance. Changes must be verified and saved to update student dashboard records.
@@ -750,12 +750,12 @@ export default function StaffPanel({
                     }}
                     className="w-full text-xs rounded-lg border border-slate-200 dark:border-slate-800 bg-white dark:bg-slate-900 text-slate-800 dark:text-slate-100 p-2.5 focus:border-indigo-500 font-bold"
                   >
-                    <option value={1}>Semester 1 (BCA Year 1)</option>
-                    <option value={2}>Semester 2 (BCA Year 1)</option>
-                    <option value={3}>Semester 3 (BCA Year 2)</option>
-                    <option value={4}>Semester 4 (BCA Year 2)</option>
-                    <option value={5}>Semester 5 (BCA Year 3)</option>
-                    <option value={6}>Semester 6 (BCA Year 3)</option>
+                    <option value={1}>Semester 1 (B.Tech Year 1)</option>
+                    <option value={2}>Semester 2 (B.Tech Year 1)</option>
+                    <option value={3}>Semester 3 (B.Tech Year 2)</option>
+                    <option value={4}>Semester 4 (B.Tech Year 2)</option>
+                    <option value={5}>Semester 5 (B.Tech Year 3)</option>
+                    <option value={6}>Semester 6 (B.Tech Year 3)</option>
                   </select>
                 </div>
 
@@ -941,7 +941,7 @@ export default function StaffPanel({
                     Student Attendance Register — Semester {selectedSemester}
                   </h5>
                   <p className="text-xs text-slate-400 mt-0.5">
-                    Branch: Bachelor of Computer Application (BCA) • Session Date: {selectedDate}
+                    Branch: Bachelor of Technology (B.Tech - Computer Science & Engineering) • Session Date: {selectedDate}
                   </p>
                 </div>
                 
@@ -963,11 +963,11 @@ export default function StaffPanel({
               {filteredStudents.length === 0 ? (
                 <div className="py-12 text-center">
                   <div className="w-16 h-16 rounded-full bg-slate-50 dark:bg-slate-950 flex items-center justify-center mx-auto mb-3 text-slate-400 font-bold border border-slate-200/50 dark:border-slate-800">
-                    BCA
+                    B.Tech
                   </div>
                   <h6 className="font-bold text-sm text-slate-700 dark:text-slate-300">No Students Found in Semester {selectedSemester}</h6>
                   <p className="text-xs text-slate-400 mt-1 max-w-sm mx-auto">
-                    There are no students enrolled in Semester {selectedSemester} of the Bachelor of Computer Application (BCA) course. You can enroll students in this semester via the Admin Panel or choose another semester.
+                    There are no students enrolled in Semester {selectedSemester} of the Bachelor of Technology (B.Tech) engineering course. You can enroll students in this semester via the Admin Panel or choose another semester.
                   </p>
                 </div>
               ) : (
@@ -1015,7 +1015,7 @@ export default function StaffPanel({
                               </div>
                             </td>
                             <td className="py-3.5 text-slate-600 dark:text-slate-400">
-                              BCA • Semester {selectedSemester}
+                              B.Tech • Semester {selectedSemester}
                             </td>
                             <td className="py-3.5">
                               <div className="flex items-center gap-2">

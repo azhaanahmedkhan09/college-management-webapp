@@ -3,7 +3,7 @@
  * SPDX-License-Identifier: Apache-2.0
  */
 
-const CACHE_NAME = 'college-portal-v1';
+const CACHE_NAME = 'campus-sphere-gmu-v2';
 const ASSETS_TO_CACHE = [
   '/',
   '/index.html',

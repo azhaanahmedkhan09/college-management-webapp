@@ -45,33 +45,33 @@ export default function BiheCollegeBuilding({ isDarkMode: initialIsDarkMode }: B
   const areas = {
     'entrance': {
       title: 'Entrance & Main Signage',
-      desc: 'Institutional gateway with the official signboard reading "BAPUJI INSTITUTE OF HI-TECH EDUCATION".',
-      details: 'A welcoming foyer that connects scholars and visitors to the academic core. Includes security checkpoint and administrative registry desks.'
+      desc: 'Institutional gateway with the official signboard reading "GM UNIVERSITY • GMU ENGINEERING CAMPUS".',
+      details: 'A welcoming foyer that connects engineering scholars and visitors to the academic core. Includes security checkpoint and administrative registry desks.'
     },
     'bca_lab': {
-      title: 'BCA Advanced Lab (Ground Floor)',
+      title: 'B.Tech Engineering Labs (Ground Floor)',
       desc: 'Equipped with 100+ high-performance computing terminals and sandbox networks.',
       details: 'This is where Roshan Sir, Prashantini Ma\'am, and Jöhan Sir conduct hands-on laboratory sessions in C, Java, Python, and AI structures.'
     },
     'faculty_wing': {
       title: 'Faculty & Professors Lounge (1st Floor)',
-      desc: 'Cabin space for our esteemed computer science and commerce academicians.',
+      desc: 'Cabin space for our esteemed computer science and engineering academicians.',
       details: 'Scholars visit here during consultation hours to get guidance on placements, projects, and academic certifications.'
     },
     'seminar_hall': {
       title: 'Central AV Seminar Hall',
-      desc: 'A premium auditorium hosting placement drives, guest lectures, and cultural briefings.',
+      desc: 'A premium auditorium hosting placement drives, guest lectures, and technical symposiums.',
       details: 'Features state-of-the-art acoustics, high-definition projectors, and high-speed Wi-Fi, perfect for events like the Google Placement Drive.'
     },
     'mba_ground': {
-      title: 'MBA College Ground & Front Lawn',
-      desc: 'A spacious, manicured green field right in front of the main college building.',
-      details: 'Used for annual fests (like Renaissance Cultural Fest), sports activities, student assembly circles, and outdoor study groups.'
+      title: 'GMU Campus Grounds & Front Lawn',
+      desc: 'A spacious, manicured green field right in front of the main GMU college building.',
+      details: 'Used for annual fests (like Renaissance Cultural Fest), sports activities, student assembly circles, and outdoor hackathons.'
     },
     'classrooms': {
       title: 'Smart Lecture Halls (2nd Floor)',
       desc: 'Interactive learning spaces with audio-visual setups and digital whiteboards.',
-      details: 'Optimized for comfortable, high-engagement academic deliveries. Used for daily BCA core semesters theory classes.'
+      details: 'Optimized for comfortable, high-engagement academic deliveries. Used for daily B.Tech engineering core semesters theory classes.'
     }
   };
 
@@ -89,10 +89,10 @@ export default function BiheCollegeBuilding({ isDarkMode: initialIsDarkMode }: B
               <School className="w-3.5 h-3.5" /> Campus Visual Core Model
             </div>
             <h2 className="text-xl font-serif text-[#1E2022] dark:text-[#F4F8FA] font-extrabold mt-1 tracking-tight leading-none uppercase">
-              BIHE Campus Building
+              GMU Engineering Campus Building
             </h2>
             <p className="text-[11px] text-[#0F5B8F]/80 dark:text-[#38BDF8]/80 mt-1 max-w-xl font-light">
-              Interactive structural projection of <strong className="text-[#1E2022] dark:text-white">Bapuji Institute of Hi-Tech Education</strong>. Hover or click rooms to inspect departments!
+              Interactive structural projection of <strong className="text-[#1E2022] dark:text-white">GM University (GMU)</strong>. Hover or click rooms to inspect departments!
             </p>
           </div>
 
@@ -256,7 +256,7 @@ export default function BiheCollegeBuilding({ isDarkMode: initialIsDarkMode }: B
                 >
                   <rect x="210" y="112" width="180" height="18" fill={isDarkMode ? "#020B12" : "#1E2022"} rx="0" stroke={isDarkMode ? "#38BDF8" : "#0F5B8F"} strokeWidth="1.5" />
                   <text x="300" y="124" fill={isDarkMode ? "#F4F8FA" : "#F59E0B"} fontSize="5.5" fontWeight="bold" fontFamily="monospace" textAnchor="middle" letterSpacing="0.2">
-                    BAPUJI INSTITUTE OF HI-TECH EDUCATION
+                    GM UNIVERSITY • GMU ENGINEERING
                   </text>
                 </g>
 
@@ -290,11 +290,11 @@ export default function BiheCollegeBuilding({ isDarkMode: initialIsDarkMode }: B
               <ellipse cx="475" cy="195" rx="10" ry="6" fill="#166534" opacity="0.8" />
               <ellipse cx="510" cy="195" rx="12" ry="8" fill="#166534" opacity="0.8" />
 
-              {/* BIHE Badge */}
+              {/* GMU Badge */}
               <g opacity={isDarkMode ? "0.8" : "0.95"}>
                 <rect x="230" y="248" width="140" height="18" fill="#1E2022" rx="0" stroke="#0F5B8F" strokeWidth="1" />
                 <text x="300" y="260" fill="#F4F8FA" fontSize="8" fontWeight="black" fontFamily="sans-serif" textAnchor="middle" letterSpacing="1">
-                  BIHE • STRONG TOGETHER
+                  GMU • GM UNIVERSITY
                 </text>
               </g>
             </svg>
@@ -308,9 +308,9 @@ export default function BiheCollegeBuilding({ isDarkMode: initialIsDarkMode }: B
           <div className="flex items-center justify-between text-[10px] font-mono text-[#0F5B8F] dark:text-[#38BDF8] mt-1">
             <div className="flex items-center gap-1">
               <MapPin className="w-3 h-3 text-[#0F5B8F] dark:text-[#38BDF8]" />
-              <span>MBA Ground, SS Layout, Davangere</span>
+              <span>P.B. Road, Davangere • GM University</span>
             </div>
-            <span>ESTD 1997</span>
+            <span>ESTD 2001</span>
           </div>
         </div>
 
@@ -324,11 +324,11 @@ export default function BiheCollegeBuilding({ isDarkMode: initialIsDarkMode }: B
             <div className="space-y-1.5 max-h-[170px] overflow-y-auto pr-1">
               {[
                 { id: 'entrance', label: 'College Entrance & Sign' },
-                { id: 'bca_lab', label: 'Ground: Advanced BCA Labs' },
+                { id: 'bca_lab', label: 'Ground: Advanced Engineering Labs' },
                 { id: 'faculty_wing', label: 'Floor 1: Faculty Lounge' },
                 { id: 'seminar_hall', label: 'Floor 1: Central AV Hall' },
                 { id: 'classrooms', label: 'Floor 2: Smart Classrooms' },
-                { id: 'mba_ground', label: 'Grounds: MBA College Ground' },
+                { id: 'mba_ground', label: 'Grounds: GMU Campus Grounds' },
               ].map((item) => (
                 <button
                   key={item.id}
@@ -374,7 +374,7 @@ export default function BiheCollegeBuilding({ isDarkMode: initialIsDarkMode }: B
                 <div className="flex flex-col items-center justify-center text-center py-6">
                   <Info className="w-5 h-5 text-[#0F5B8F]/40 dark:text-[#38BDF8]/40 mb-2" />
                   <span className="text-[9px] font-mono text-[#0F5B8F] dark:text-[#38BDF8] font-bold uppercase tracking-wider">
-                    Select a section of the BIHE Campus Building
+                    Select a section of the GMU Campus Building
                   </span>
                 </div>
               )}

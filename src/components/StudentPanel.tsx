@@ -396,10 +396,10 @@ export default function StudentPanel({
             <div className="bg-white dark:bg-slate-900 p-5 rounded-2xl border border-slate-200 dark:border-slate-800 shadow-xs">
               <h3 className="text-sm font-bold text-slate-800 dark:text-slate-100 mb-3 flex items-center gap-2">
                 <School className="w-4 h-4 text-amber-500" />
-                BIHE Campus Interactive Navigator
+                GMU Campus Interactive Navigator
               </h3>
               <p className="text-xs text-slate-400 dark:text-slate-500 mb-4 leading-relaxed">
-                Explore departments, laboratory terminals, and central halls at Bapuji Institute of Hi-Tech Education. Hover over sections of the interactive campus facade below.
+                Explore departments, laboratory terminals, and central halls at GM University (GMU) Engineering College. Hover over sections of the interactive campus facade below.
               </p>
               <BiheCollegeBuilding />
             </div>
